@@ -9,17 +9,40 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // get url
+        let url = URL(string: "https://httpbin.org/get")
+        var urlRequest = URLRequest(url: url!)
+        
+        urlRequest.httpMethod = "GET"
+        
+        let task = URLSession.shared.dataTask(with: urlRequest, completionHandler: { (data:Data?, response:URLResponse?, error:Error?) -> Void in
+            
+            if error != nil
+            {
+                print("error=\(error?.localizedDescription)")
+                return
+            }
+            
+            // Print out response string
+            if let data = data {
+                let responseString = NSString(data: data, encoding: String.Encoding.utf8.rawValue)
+                
+                NSLog("\(responseString)")
+            }
+        })
+        
+        task.resume()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
-
-
+    
+    
 }
 

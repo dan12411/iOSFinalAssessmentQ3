@@ -18,4 +18,6 @@
 
 參考資料：
 
-之前上課的記憶
+1. 參考之前上課get/post Sheetsu API資料的程式碼，修改url，並改用NSLog印出GET的資料
+
+2. 
