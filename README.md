@@ -15,10 +15,15 @@
 1. 參考之前上課get/post Sheetsu API資料的程式碼，修改url，並改用NSLog印出GET的資料
 
 2-1. 將httpMethod改成POST
+
 2-2. 產生current time，並且格式為"yyyy-MM-dd HH:mm:ss"
+
 2-3. 把產生的current time，轉為JSON格式
+
 2-4. 利用URLSession.shared.dataTask將JSON data上傳
+
 2-5. 用responseTime..timeIntervalSince，計算出反應時間差值
+
 2-6. NSLog把結果印出來
 
 ---
