@@ -28,3 +28,5 @@
 1. 參考之前上課get/post Sheetsu API資料的程式碼，修改url，並改用NSLog印出GET的資料
 
 2. [How to make HTTP Post request with JSON body in Swift](http://stackoverflow.com/questions/31937686/how-to-make-http-post-request-with-json-body-in-swift)
+
+3. [How to work with dates and times in Swift, part two: Calculations with dates [Updated for Swift 2]](http://www.globalnerdy.com/2015/01/29/how-to-work-with-dates-and-times-in-swift-part-two-calculations-with-dates/)
